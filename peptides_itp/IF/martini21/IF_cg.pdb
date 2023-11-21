@@ -1,0 +1,12 @@
+ATOM      1 BB   ILE A   1      -1.507  -0.842   3.715  1.00  0.00              
+ATOM      2 SC1  ILE A   1      -2.576  -3.358   2.034  1.00  0.00              
+ATOM      3 BB   PHE A   2       2.009  -2.255   1.845  1.00  0.00              
+ATOM      4 SC1  PHE A   2       2.638   0.699   2.797  1.00  0.00              
+ATOM      5 SC2  PHE A   2       5.018   0.896   2.535  1.00  0.00              
+ATOM      6 SC3  PHE A   2       4.152   2.788   1.768  1.00  0.00              
+TER       7      PHE A   2 
+CONECT    1    2    3
+CONECT    3    4
+CONECT    4    5    6
+CONECT    5    6
+END   

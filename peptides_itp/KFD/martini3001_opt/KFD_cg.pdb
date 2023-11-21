@@ -1,0 +1,17 @@
+ATOM      1 BB   LYS A   1       1.013   0.009   1.004  1.00  0.00              
+ATOM      2 SC1  LYS A   1       3.159   1.608  -1.176  1.00  0.00              
+ATOM      3 SC2  LYS A   1       5.747   3.081  -2.442  1.00  0.00              
+ATOM      4 BB   PHE A   2       4.485  -0.005   2.505  1.00  0.00              
+ATOM      5 SC1  PHE A   2       2.997  -1.122   4.982  1.00  0.00              
+ATOM      6 SC2  PHE A   2       2.128  -0.205   7.171  1.00  0.00              
+ATOM      7 SC3  PHE A   2       3.718  -1.346   7.391  1.00  0.00              
+ATOM      8 BB   ASP A   3       7.328   0.003   5.574  1.00  0.00              
+ATOM      9 SC1  ASP A   3       9.299   1.097   3.228  1.00  0.00              
+TER      10      ASP A   3 
+CONECT    1    2    4
+CONECT    2    3
+CONECT    4    5    8
+CONECT    5    6    7
+CONECT    6    7
+CONECT    8    9
+END   

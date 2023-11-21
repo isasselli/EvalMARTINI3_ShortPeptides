@@ -1,0 +1,105 @@
+; This file was generated using the following command:
+; /usr/local/bin/martinize2 -f ../KYW.pdb -o topol.top -x KYW_cg.pdb -ff martini3001 -ss EEE
+; martinize with vermouth 0.7.3
+; The following sequence of secondary structure 
+; was used for the full system:
+; EEE
+
+; Pleas cite the following papers:
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
+
+[ moleculetype ]
+molecule_0 1
+
+[ atoms ]
+ 1 Q4   1 LYS BB   1   1     
+ 2 SC3  1 LYS SC1  2 0.0     
+ 3 SQ4p 1 LYS SC2  3 1.0     
+ 4 P2   2 TYR BB   4 0.0     
+ 5 SC4  2 TYR SC1  5 0.0     
+ 6 SC4  2 TYR SC2  6 0.0     
+ 7 SC4  2 TYR SC3  7 0.0     
+ 8 TN6  2 TYR SC4  8 0.0     
+ 9 Q4   3 TRP BB   9  -1     
+10 SC4  3 TRP SC1 10 0.0 36.0
+11 TN6d 3 TRP SC2 11 0.0 36.0
+12 SC4  3 TRP SC3 12 0.0  0.0
+13 SC4  3 TRP SC4 13 0.0 36.0
+14 SC4  3 TRP SC5 14 0.0 36.0
+
+[ bonds ]
+; Backbone bonds
+ 1  4 1 0.350 4000
+ 4  9 1 0.350 4000
+
+; Side chain bonds
+ 1  2 1 0.330 5000
+ 2  3 1 0.360 5000
+ 4  5 1 0.325 5000
+ 9 10 1 0.315 5000
+
+#ifdef FLEXIBLE
+; Side chain bonds
+ 5  6 1 0.300 1000000
+ 5  7 1 0.300 1000000
+ 6  8 1 0.285 1000000
+ 7  8 1 0.285 1000000
+ 6  7 1 0.300 1000000
+10 11 1 0.335 1000000
+11 14 1 0.412 1000000
+13 14 1 0.293 1000000
+10 13 1 0.404 1000000
+11 13 1 0.470 1000000
+#endif
+
+[ constraints ]
+#ifndef FLEXIBLE
+; Side chain bonds
+ 5  6 1 0.300
+ 5  7 1 0.300
+ 6  8 1 0.285
+ 7  8 1 0.285
+ 6  7 1 0.300
+10 11 1 0.335
+11 14 1 0.412
+13 14 1 0.293
+10 13 1 0.404
+11 13 1 0.470
+#endif
+
+[ angles ]
+; BBB angles
+ 1  4  9 10 134 25
+
+; BBS angles regular martini
+ 1  4  5 2 100 25
+ 4  9 10 2 100 25
+
+; First SBB regular martini
+ 2  1  4 2 100 25
+
+; Side chain angles
+ 1  2  3 2 180.000 25.0
+ 4  5  6 2 120.000 60.0
+ 4  5  7 2 120.000 60.0
+ 9 10 11 2 120.000 60.0
+ 9 10 13 2 130.000 60.0
+
+[ dihedrals ]
+ 8  6  7  5 2 180.0 50.0
+14 13 11 10 2 180.0 100.0
+
+[ exclusions ]
+ 4  5  6  7  8 
+ 5  6  7  8 
+ 6  7  8 
+ 7  8 
+ 9 10 11 12 13 14 
+10 11 12 13 14 
+11 12 13 14 
+12 13 14 
+13 14 
+
+[ virtual_sitesn ]
+12 2 14 13 11 10
+
