@@ -1,0 +1,68 @@
+
+integrator               	= md
+; start time and timestep in ps
+tinit                    	= 0.0
+dt                       	= 0.02
+nsteps                   	= 50000000
+; number of steps for center of mass motion removal = 
+nstcomm                  	= 100
+comm-grps		 		= 
+
+; OUTPUT CONTROL OPTIONS 	= 
+; Output frequency for coords (x), velocities (v) and forces (f) = 
+nstxout                  	= 50000
+nstvout                  	= 50000
+nstfout                  	= 0
+; Output frequency for energies to log file and energy file = 
+nstlog                   	= 50000
+nstenergy                	= 50000
+; Output frequency for xtc file = 
+nstxtcout                	= 50000
+
+; NEIGHBORSEARCHING PARAMETERS = 
+cutoff-scheme			= Verlet
+nstlist        			= 10
+ns_type                  	= grid
+pbc                  		= xyz 
+verlet-buffer-tolerance		= 0.005
+
+; OPTIONS FOR ELECTROSTATICS AND VDW = 
+; Method for doing electrostatics = 
+coulombtype  			= reaction-field
+rcoulomb         		= 1.1
+epsilon_r          		= 15
+; Method for doing Van der Waals = 
+vdw_type                	= cutoff
+vdw-modifier			= Potential-shift-verlet
+rvdw				= 1.1
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS = 
+; Temperature coupling   	= 
+tcoupl                   	= v-rescale
+tau_t                    	= 1.0 1.0
+tc-grps                  	= solute solvent 
+ref_t                    	= 303 303
+Pcoupl                   	= Berendsen  
+Pcoupltype               	= isotropic
+tau_p                    	= 3.0 
+compressibility          	= 3e-4 
+ref_p                    	= 1.0
+
+; GENERATE VELOCITIES FOR STARTUP RUN = 
+gen_vel                  	= yes 
+gen_temp                 	= 303
+gen_seed                 	= 474529
+
+; OPTIONS FOR BONDS     	= 
+constraints              	= none 
+; Type of constraint algorithm = 
+constraint_algorithm     	= Lincs
+; Do not constrain the start configuration = 
+unconstrained_start      	= no
+; Highest order in the expansion of the constraint coupling matrix = 
+lincs_order              	= 4
+; Lincs will write a warning to the stderr if in one step a bond = 
+; rotates over more degrees than = 
+lincs_warnangle          	= 30
+
+
