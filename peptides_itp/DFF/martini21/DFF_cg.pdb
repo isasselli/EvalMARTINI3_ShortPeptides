@@ -1,0 +1,19 @@
+ATOM      1 BB   ASP A   1       1.010   0.005   1.006  1.00  0.00              
+ATOM      2 SC1  ASP A   1       3.487   1.098  -1.157  1.00  0.00              
+ATOM      3 BB   PHE A   2       4.475  -0.005   2.526  1.00  0.00              
+ATOM      4 SC1  PHE A   2       2.613  -0.804   5.145  1.00  0.00              
+ATOM      5 SC2  PHE A   2       3.935  -1.582   6.994  1.00  0.00              
+ATOM      6 SC3  PHE A   2       2.341  -0.313   7.865  1.00  0.00              
+ATOM      7 BB   PHE A   3       7.311   0.004   5.606  1.00  0.00              
+ATOM      8 SC1  PHE A   3       8.854   0.804   2.958  1.00  0.00              
+ATOM      9 SC2  PHE A   3      10.986   1.582   3.745  1.00  0.00              
+ATOM     10 SC3  PHE A   3      11.405   0.312   1.977  1.00  0.00              
+TER      11      PHE A   3 
+CONECT    1    2    3
+CONECT    3    4    7
+CONECT    4    5    6
+CONECT    5    6
+CONECT    7    8
+CONECT    8    9   10
+CONECT    9   10
+END   
