@@ -1,0 +1,56 @@
+; This file was generated using the following command:
+; /home/sasselli/.local/bin/martinize2 -f ../GHK.pdb -x GHK_cg.pdb -o topol.top -ss EEE -ff martini22
+; martinize with vermouth 0.9.1
+; The following sequence of secondary structure 
+; was used for the full system:
+; EEE
+
+; Pleas cite the following papers:
+; Monticelli, L; Kandasamy, S K; Periole, X; Larson, R G; Tieleman, D P; Marrink, S J;  Journal of chemical theory and computation 2008
+; de Jong, D H; Singh, G; Bennett, W D; Arnarez, C; Wassenaar, T A; Schaefer, L V; Periole, X; Tieleman, D P; Marrink, S J;  Journal of chemical theory and computation 2013
+; Marrink, S J; Risselada, H J; Yefimov, S; Tieleman, D P; De Vries, A H;  The journal of physical chemistry B 2007
+
+[ moleculetype ]
+molecule_0 1
+
+[ atoms ]
+1 Qd  1 GLY BB  1   1 
+2 Nda 2 HSD BB  2 0.0 
+3 SC4 2 HSD SC1 3 0.0 
+4 SP1 2 HSD SC2 4 0.0 
+5 SP1 2 HSD SC3 5 0.0 
+6 Qa  3 LYS BB  6  -1 
+7 C3  3 LYS SC1 7 0.0 
+8 Qd  3 LYS SC2 8 1.0 
+
+[ bonds ]
+; Backbone bonds
+1 2 1 0.350 1250
+2 6 1 0.350 1250
+
+; Side chain bonds
+2 3 1 0.32 7500
+6 7 1 0.33 5000
+7 8 1 0.28 5000
+
+[ constraints ]
+3 4 1 0.27
+3 5 1 0.27
+4 5 1 0.27
+
+[ angles ]
+; BBB angles
+1 2 6 2 134 25
+
+; BBS angles
+1 2 3 2 100 25
+2 6 7 2 100 25
+
+; Side chain angles
+2 3 4 2 150.000 50.0
+2 3 5 2 150.000 50.0
+6 7 8 2 180.000 25.0
+
+[ dihedrals ]
+2 4 5 3 2 0.0 50.0
+

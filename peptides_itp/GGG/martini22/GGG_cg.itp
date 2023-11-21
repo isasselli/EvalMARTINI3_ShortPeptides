@@ -1,0 +1,29 @@
+; This file was generated using the following command:
+; /usr/local/bin/martinize2 -f ../GGG.pdb -o trial.top -x trial.pdb -ss EEE -ff martini22
+; martinize with vermouth 0.9.2.dev12
+; The following sequence of secondary structure 
+; was used for the full system:
+; EEE
+
+; Pleas cite the following papers:
+; Monticelli, L; Kandasamy, S K; Periole, X; Larson, R G; Tieleman, D P; Marrink, S J;  Journal of chemical theory and computation 2008
+; Marrink, S J; Risselada, H J; Yefimov, S; Tieleman, D P; De Vries, A H;  The journal of physical chemistry B 2007
+; de Jong, D H; Singh, G; Bennett, W D; Arnarez, C; Wassenaar, T A; Schaefer, L V; Periole, X; Tieleman, D P; Marrink, S J;  Journal of chemical theory and computation 2013
+
+[ moleculetype ]
+molecule_0 1
+
+[ atoms ]
+1 Qd  1 GLY BB 1   1 
+2 Nda 2 GLY BB 2 0.0 
+3 Qa  3 GLY BB 3  -1 
+
+[ bonds ]
+; Backbone bonds
+1 2 1 0.350 1250
+2 3 1 0.350 1250
+
+[ angles ]
+; BBB angles
+1 2 3 2 134 25
+
