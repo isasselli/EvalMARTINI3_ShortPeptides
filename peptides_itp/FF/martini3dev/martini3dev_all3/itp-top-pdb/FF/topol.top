@@ -1,0 +1,14 @@
+#include "martini_v3.0.b.3.2.itp"
+#include "martini_v3.0_ions.itp"
+#include "martini_v3.0_solvents.itp"
+#include "FF_cg.itp"
+    
+[ system ]
+; name
+Martini system from ../FF.pdb
+    
+[ molecules ]
+; name        number
+molecule_0 	XXXXX
+WN		YYYYY
+        
